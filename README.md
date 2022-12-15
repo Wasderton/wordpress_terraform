@@ -1,7 +1,8 @@
 # wordpress_terraform
 Functional
 
-Wordpress  site який знаходиться в докер контейнері створеному за допомогою ECS.
+Wordpress site located in a docker container created using ECS.
+
 
 Running the project
 
@@ -16,6 +17,7 @@ If you want to run wordpress, you need:
 $ terraform init
 
 $ terraform apply
+
 
 Authors
 
