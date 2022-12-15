@@ -15,7 +15,7 @@ resource "aws_db_instance" "terraform_rds" {
   engine                  = "mysql"
   engine_version          = "5.7"
   instance_class          = "db.t3.micro"
-  username                = "sardox"
+  username                = var.db_user
   password                = var.password
   parameter_group_name    = "default.mysql5.7"
   skip_final_snapshot     = true

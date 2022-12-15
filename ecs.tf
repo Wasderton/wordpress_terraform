@@ -34,7 +34,7 @@ resource "aws_ecs_task_definition" "terraform_task" {
         },
         {
           "name" : "WORDPRESS_DB_USER",
-          "value" : "${db_user}"
+          "value" : "${var.db_user}"
         }
       ]
 
