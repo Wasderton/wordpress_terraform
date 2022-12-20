@@ -30,7 +30,7 @@ resource "aws_ecs_task_definition" "terraform_task" {
         },
         {
           "name" : "WORDPRESS_DB_PASSWORD",
-          "value" : "${var.password}"
+          "value" : "${random_password.password.result}"
         },
         {
           "name" : "WORDPRESS_DB_USER",
